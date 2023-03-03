@@ -10,6 +10,7 @@ import HelpSystem from "./emergency";
 const LocationPost = () => {
   const [loading, setLoading] = useState(false);
   const toast = useToast();
+  HelpSystem();
 
   const LocationPostNorm = () => {
     SetStatus();
@@ -34,12 +35,12 @@ const LocationPost = () => {
   const [WifiPass, setWifiPass] = useState<string>("");
 
   const SetStatus = () => {
-    setIPAdress("IPアドレス: 123.456.789.012");
-    setUserName("ユーザー名: user");
-    setNasPass("password: 12345678");
+    setIPAdress("IPアドレス: ftp://192.168.87:8000");
+    setUserName("ユーザー名: PC");
+    setNasPass("password: 1234");
     setFreeWifi("FREE Wi-fi");
-    setSSID("SSID: abcdefgh");
-    setWifiPass("password: 12345678");
+    setSSID("SSID: 応仁のLAN");
+    setWifiPass("password: 20040227");
   };
 
   const handleLocationPost = (Location: String) => {
