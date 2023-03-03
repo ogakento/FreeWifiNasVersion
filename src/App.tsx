@@ -109,8 +109,8 @@ const LocationPost = () => {
         alignItems="center"
         className={styles.container}
       >
-        <Text fontSize="32px" fontWeight="bold" mb="2">
-          FREE Wi-fi NASバージョン
+        <Text fontSize="20px" fontWeight="bold" mb="0px">
+          FREE Wi-fi自走式バージョンNAS+
         </Text>
         <Text fontSize="xl" fontWeight="semibold" mb="1">
           {IPAdress}
@@ -118,10 +118,10 @@ const LocationPost = () => {
         <Text fontSize="xl" fontWeight="semibold" mb="1">
           {UserName}
         </Text>
-        <Text fontSize="xl" fontWeight="semibold" mb="1">
+        <Text fontSize="xl" fontWeight="semibold" mb="10">
           {NasPass}
         </Text>
-        <Text fontSize="24px" fontWeight="bold" mb="2">
+        <Text fontSize="xl" fontWeight="bold" mb="2">
           {FreeWifi}
         </Text>
         <Text fontSize="xl" fontWeight="semibold" mb="1">
