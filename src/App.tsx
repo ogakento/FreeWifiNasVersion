@@ -8,7 +8,7 @@ import styles from "./LocationPost.module.scss";
 import HelpSystem from "./emergency";
 
 const LocationPost = () => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState<boolean>(false);
   const toast = useToast();
   HelpSystem();
 
@@ -35,7 +35,8 @@ const LocationPost = () => {
   const [WifiPass, setWifiPass] = useState<string>("");
 
   const SetStatus = () => {
-    setIPAdress("IPアドレス: ftp://192.168.87:8000");
+    setLoading(true);
+    setIPAdress("IPアドレス: ftp://192.168.96.87:8000");
     setUserName("ユーザー名: PC");
     setNasPass("password: 1234");
     setFreeWifi("FREE Wi-fi");
